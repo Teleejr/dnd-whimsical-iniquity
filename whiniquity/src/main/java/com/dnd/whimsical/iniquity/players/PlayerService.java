@@ -9,12 +9,12 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Service
-public class PlayersService {
+public class PlayerService {
 
     private final PlayerRepository playerRepository;
 
     @Autowired
-    public PlayersService(PlayerRepository playerRepository) {
+    public PlayerService(PlayerRepository playerRepository) {
         this.playerRepository = playerRepository;
     }
     public List<Players> getPlayers() {
